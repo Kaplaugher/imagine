@@ -47,6 +47,7 @@ export const DeleteConfirmation = ({ imageId }: { imageId: string }) => {
           <AlertDialogAction
             className="border bg-red-500 text-white hover:bg-red-600"
             onClick={() =>
+              /* @ts-ignore */
               startTransition(async () => {
                 await deleteImage(imageId);
               })
