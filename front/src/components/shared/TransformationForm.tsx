@@ -195,7 +195,7 @@ export const TransformationForm = ({
     );
 
     setNewTransformation(null);
-
+    /* @ts-ignore */
     startTransition(async () => {
       await updateCredits(userId, creditFee);
     });
